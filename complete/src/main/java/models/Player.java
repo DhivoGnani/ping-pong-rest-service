@@ -6,14 +6,15 @@ public class Player {
     private final String firstName;
     private final String lastName;
     private int age;
-    // TODO: Add gender field (use ENUM)
+    private char gender;
 
-    public Player(long id, String firstName, String lastName, int age)
+    public Player(long id, String firstName, String lastName, int age, char gender)
     {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
+        this.gender = gender;
     }
 
     public long getId() {
@@ -30,5 +31,9 @@ public class Player {
 
     public int getAge() {
         return age;
+    }
+
+    public char getGender() {
+        return gender;
     }
 }
